@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions -with rock paper scissor 
+    </title>
+</head>
+<body>
+    <button id="btnRock">ROCK</button>
+    <button id="btnPaper">PAPER</button>
+    <button id="btnScissor">SCISSOR</button>
+
+    <p id="result">Nothing to show rn...</p>
+
+
+    <script>
+        let result = document.getElementById('result')
+        const rockBtn = document.getElementById('btnRock')
+        const paparBtn = document.getElementById('btnPaper')
+        const scissorBtn = document.getElementById('btnScissor')
+
+        function gamePaly(userChoice){
+            const options = ["ROCK","PAPER","SCISSOR"]
+
+            computerChoice = Math.ceil((Math.random()*3))
+
+            for (i=0; i<=10; i++){
+                console.log(options[computerChoice])
+            }
+        }
+        gamePaly("somethign")
+//TODO: fix random function
+    </script>
+</body>
+</html>
